@@ -1,0 +1,184 @@
+2023-10-19 09:51:40 [scrapy.core.scraper] ERROR: Spider error processing <GET https://ufsauto.com/make.html?p=1> (referer: None)
+Traceback (most recent call last):
+  File "C:\office\ufso\venv\lib\site-packages\scrapy\utils\defer.py", line 279, in iter_errback
+    yield next(it)
+  File "C:\office\ufso\venv\lib\site-packages\scrapy\utils\python.py", line 350, in __next__
+    return next(self.data)
+  File "C:\office\ufso\venv\lib\site-packages\scrapy\utils\python.py", line 350, in __next__
+    return next(self.data)
+  File "C:\office\ufso\venv\lib\site-packages\scrapy\core\spidermw.py", line 106, in process_sync
+    for r in iterable:
+  File "C:\office\ufso\venv\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 28, in <genexpr>
+    return (r for r in result or () if self._filter(r, spider))
+  File "C:\office\ufso\venv\lib\site-packages\scrapy\core\spidermw.py", line 106, in process_sync
+    for r in iterable:
+  File "C:\office\ufso\venv\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 352, in <genexpr>
+    return (self._set_referer(r, response) for r in result or ())
+  File "C:\office\ufso\venv\lib\site-packages\scrapy\core\spidermw.py", line 106, in process_sync
+    for r in iterable:
+  File "C:\office\ufso\venv\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 27, in <genexpr>
+    return (r for r in result or () if self._filter(r, spider))
+  File "C:\office\ufso\venv\lib\site-packages\scrapy\core\spidermw.py", line 106, in process_sync
+    for r in iterable:
+  File "C:\office\ufso\venv\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 31, in <genexpr>
+    return (r for r in result or () if self._filter(r, response, spider))
+  File "C:\office\ufso\venv\lib\site-packages\scrapy\core\spidermw.py", line 106, in process_sync
+    for r in iterable:
+  File "C:/office/ufso/ufs_auto/ufs_auto/spiders/links.py", line 78, in parse
+    dfs_.columns = ['stockid','botswana_price','zimbabwe_price']
+  File "C:\office\ufso\venv\lib\site-packages\pandas\core\generic.py", line 6002, in __setattr__
+    return object.__setattr__(self, name, value)
+  File "pandas\_libs\properties.pyx", line 69, in pandas._libs.properties.AxisProperty.__set__
+  File "C:\office\ufso\venv\lib\site-packages\pandas\core\generic.py", line 730, in _set_axis
+    self._mgr.set_axis(axis, labels)
+  File "C:\office\ufso\venv\lib\site-packages\pandas\core\internals\managers.py", line 225, in set_axis
+    self._validate_set_axis(axis, new_labels)
+  File "C:\office\ufso\venv\lib\site-packages\pandas\core\internals\base.py", line 70, in _validate_set_axis
+    raise ValueError(
+ValueError: Length mismatch: Expected axis has 1 elements, new values have 3 elements
+2023-10-19 13:41:35 [scrapy.core.scraper] ERROR: Spider error processing <GET https://ufsauto.com/make.html?p=1> (referer: None)
+Traceback (most recent call last):
+  File "C:\office\ufso\venv\lib\site-packages\parsel\selector.py", line 643, in xpath
+    result = xpathev(
+  File "src\lxml\etree.pyx", line 1600, in lxml.etree._Element.xpath
+  File "src\lxml\xpath.pxi", line 305, in lxml.etree.XPathElementEvaluator.__call__
+  File "src\lxml\xpath.pxi", line 225, in lxml.etree._XPathEvaluatorBase._handle_result
+lxml.etree.XPathEvalError: Invalid expression
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\office\ufso\venv\lib\site-packages\scrapy\utils\defer.py", line 279, in iter_errback
+    yield next(it)
+  File "C:\office\ufso\venv\lib\site-packages\scrapy\utils\python.py", line 350, in __next__
+    return next(self.data)
+  File "C:\office\ufso\venv\lib\site-packages\scrapy\utils\python.py", line 350, in __next__
+    return next(self.data)
+  File "C:\office\ufso\venv\lib\site-packages\scrapy\core\spidermw.py", line 106, in process_sync
+    for r in iterable:
+  File "C:\office\ufso\venv\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 28, in <genexpr>
+    return (r for r in result or () if self._filter(r, spider))
+  File "C:\office\ufso\venv\lib\site-packages\scrapy\core\spidermw.py", line 106, in process_sync
+    for r in iterable:
+  File "C:\office\ufso\venv\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 352, in <genexpr>
+    return (self._set_referer(r, response) for r in result or ())
+  File "C:\office\ufso\venv\lib\site-packages\scrapy\core\spidermw.py", line 106, in process_sync
+    for r in iterable:
+  File "C:\office\ufso\venv\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 27, in <genexpr>
+    return (r for r in result or () if self._filter(r, spider))
+  File "C:\office\ufso\venv\lib\site-packages\scrapy\core\spidermw.py", line 106, in process_sync
+    for r in iterable:
+  File "C:\office\ufso\venv\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 31, in <genexpr>
+    return (r for r in result or () if self._filter(r, response, spider))
+  File "C:\office\ufso\venv\lib\site-packages\scrapy\core\spidermw.py", line 106, in process_sync
+    for r in iterable:
+  File "C:/office/ufso/ufs_auto/ufs_auto/spiders/links.py", line 28, in parse_page
+    item_links = response.xpath('//*[@id="layer-product-list"]div[2]//a/@href').getall()
+  File "C:\office\ufso\venv\lib\site-packages\scrapy\http\response\text.py", line 157, in xpath
+    return self.selector.xpath(query, **kwargs)
+  File "C:\office\ufso\venv\lib\site-packages\parsel\selector.py", line 650, in xpath
+    raise ValueError(f"XPath error: {exc} in {query}")
+ValueError: XPath error: Invalid expression in //*[@id="layer-product-list"]div[2]//a/@href
+2023-10-19 13:42:18 [scrapy.core.scraper] ERROR: Spider error processing <GET https://ufsauto.com/make.html?p=1> (referer: None)
+Traceback (most recent call last):
+  File "C:\office\ufso\venv\lib\site-packages\parsel\selector.py", line 643, in xpath
+    result = xpathev(
+  File "src\lxml\etree.pyx", line 1600, in lxml.etree._Element.xpath
+  File "src\lxml\xpath.pxi", line 305, in lxml.etree.XPathElementEvaluator.__call__
+  File "src\lxml\xpath.pxi", line 225, in lxml.etree._XPathEvaluatorBase._handle_result
+lxml.etree.XPathEvalError: Invalid expression
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\office\ufso\venv\lib\site-packages\scrapy\utils\defer.py", line 279, in iter_errback
+    yield next(it)
+  File "C:\office\ufso\venv\lib\site-packages\scrapy\utils\python.py", line 350, in __next__
+    return next(self.data)
+  File "C:\office\ufso\venv\lib\site-packages\scrapy\utils\python.py", line 350, in __next__
+    return next(self.data)
+  File "C:\office\ufso\venv\lib\site-packages\scrapy\core\spidermw.py", line 106, in process_sync
+    for r in iterable:
+  File "C:\office\ufso\venv\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 28, in <genexpr>
+    return (r for r in result or () if self._filter(r, spider))
+  File "C:\office\ufso\venv\lib\site-packages\scrapy\core\spidermw.py", line 106, in process_sync
+    for r in iterable:
+  File "C:\office\ufso\venv\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 352, in <genexpr>
+    return (self._set_referer(r, response) for r in result or ())
+  File "C:\office\ufso\venv\lib\site-packages\scrapy\core\spidermw.py", line 106, in process_sync
+    for r in iterable:
+  File "C:\office\ufso\venv\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 27, in <genexpr>
+    return (r for r in result or () if self._filter(r, spider))
+  File "C:\office\ufso\venv\lib\site-packages\scrapy\core\spidermw.py", line 106, in process_sync
+    for r in iterable:
+  File "C:\office\ufso\venv\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 31, in <genexpr>
+    return (r for r in result or () if self._filter(r, response, spider))
+  File "C:\office\ufso\venv\lib\site-packages\scrapy\core\spidermw.py", line 106, in process_sync
+    for r in iterable:
+  File "C:/office/ufso/ufs_auto/ufs_auto/spiders/links.py", line 28, in parse_page
+    item_links = response.xpath('//*[@id="layer-product-list"]div[2]/@href').getall()
+  File "C:\office\ufso\venv\lib\site-packages\scrapy\http\response\text.py", line 157, in xpath
+    return self.selector.xpath(query, **kwargs)
+  File "C:\office\ufso\venv\lib\site-packages\parsel\selector.py", line 650, in xpath
+    raise ValueError(f"XPath error: {exc} in {query}")
+ValueError: XPath error: Invalid expression in //*[@id="layer-product-list"]div[2]/@href
+2023-10-19 17:30:02 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://ufsauto.com/a0309044-mercedes-enz-a-class-2013.html> (failed 3 times): 500 Internal Server Error
+2023-10-19 17:30:03 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://ufsauto.com/a0309047-nissan-juke-2011.html> (failed 3 times): 500 Internal Server Error
+2023-10-19 17:30:03 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://ufsauto.com/a0309040-mazda-demio-2010.html> (failed 3 times): 500 Internal Server Error
+2023-10-19 17:30:03 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://ufsauto.com/a0309050-toyota-ractis-2011.html> (failed 3 times): 500 Internal Server Error
+2023-10-19 17:30:03 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://ufsauto.com/a0309049-mazda-demio-2007.html> (failed 3 times): 500 Internal Server Error
+2023-10-19 17:30:03 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://ufsauto.com/a0309046-toyota-raum-2008.html> (failed 3 times): 500 Internal Server Error
+2023-10-19 17:30:04 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://ufsauto.com/a0309051-toyota-sienta-2006.html> (failed 3 times): 500 Internal Server Error
+2023-10-19 17:30:04 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://ufsauto.com/a0309053-toyota-probox-van-2011.html> (failed 3 times): 500 Internal Server Error
+2023-10-19 17:30:04 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://ufsauto.com/a0309045-mazda-axela-sports-2010.html> (failed 3 times): 500 Internal Server Error
+2023-10-19 17:30:05 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://ufsauto.com/a0309159-nissan-vanette-van-2014.html> (failed 3 times): 500 Internal Server Error
+2023-10-19 17:30:05 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://ufsauto.com/a0309169-toyota-regius-ace-2014.html> (failed 3 times): 500 Internal Server Error
+2023-10-19 17:30:05 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://ufsauto.com/a0309052-honda-fit-2002.html> (failed 3 times): 500 Internal Server Error
+2023-10-19 17:30:05 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://ufsauto.com/a0309183-toyota-mark-x-2005.html> (failed 3 times): 500 Internal Server Error
+2023-10-19 17:30:06 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://ufsauto.com/a0309173-nissan-vanette-van-2014.html> (failed 3 times): 500 Internal Server Error
+2023-10-19 17:30:06 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://ufsauto.com/a0309160-honda-fit-2014.html> (failed 3 times): 500 Internal Server Error
+2023-10-19 17:30:09 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://ufsauto.com/a0309156-honda-fit-2014.html> (failed 3 times): 500 Internal Server Error
+2023-10-19 17:30:11 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://ufsauto.com/a0309170-toyota-alphard-2003.html> (failed 3 times): 500 Internal Server Error
+2023-10-19 17:30:12 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://ufsauto.com/a0309167-toyota-ractis-2010.html> (failed 3 times): 500 Internal Server Error
+2023-10-19 17:30:12 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://ufsauto.com/a0309164-mazda-bongo-van-2013.html> (failed 3 times): 500 Internal Server Error
+2023-10-19 17:30:12 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://ufsauto.com/a0309157-toyota-auris-2006.html> (failed 3 times): 500 Internal Server Error
+2023-10-19 17:30:12 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://ufsauto.com/a0309158-toyota-probox-van-2007.html> (failed 3 times): 500 Internal Server Error
+2023-10-19 17:30:12 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://ufsauto.com/a0309161-toyota-vitz-2005.html> (failed 3 times): 500 Internal Server Error
+2023-10-19 17:30:12 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://ufsauto.com/a0309171-mazda-cx-5-2013.html> (failed 3 times): 500 Internal Server Error
+2023-10-19 17:30:13 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://ufsauto.com/a0309168-toyota-ractis-2010.html> (failed 3 times): 500 Internal Server Error
+2023-10-19 17:30:13 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://ufsauto.com/a0309195-bmw-320-i-2012.html> (failed 3 times): 500 Internal Server Error
+2023-10-19 17:30:13 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://ufsauto.com/a0309177-toyota-raum-2003.html> (failed 3 times): 500 Internal Server Error
+2023-10-19 17:30:13 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://ufsauto.com/a0309186-honda-fit-2010.html> (failed 3 times): 500 Internal Server Error
+2023-10-19 17:30:13 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://ufsauto.com/a0309176-toyota-ractis-2008.html> (failed 3 times): 500 Internal Server Error
+2023-10-19 17:30:14 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://ufsauto.com/a0309189-toyota-dyna-truck-2004.html> (failed 3 times): 500 Internal Server Error
+2023-10-19 17:30:14 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://ufsauto.com/a0309184-toyota-sienta-2009.html> (failed 3 times): 500 Internal Server Error
+2023-10-19 17:30:17 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://ufsauto.com/a0309166-mazda-demio-2012.html> (failed 3 times): 500 Internal Server Error
+2023-10-19 17:30:20 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://ufsauto.com/a0309182-toyota-wish-2005.html> (failed 3 times): 500 Internal Server Error
+2023-10-19 17:30:20 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://ufsauto.com/a0309190-toyota-probox-van-2011.html> (failed 3 times): 500 Internal Server Error
+2023-10-19 17:30:21 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://ufsauto.com/a0309179-honda-fit-2014.html> (failed 3 times): 500 Internal Server Error
+2023-10-19 17:30:22 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://ufsauto.com/a0309185-toyota-ractis-2006.html> (failed 3 times): 500 Internal Server Error
+2023-10-19 17:30:22 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://ufsauto.com/a0309187-honda-fit-2002.html> (failed 3 times): 500 Internal Server Error
+2023-10-19 17:30:22 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://ufsauto.com/a0309178-toyota-ractis-2012.html> (failed 3 times): 500 Internal Server Error
+2023-10-19 17:30:23 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://ufsauto.com/a0309180-toyota-probox-2014.html> (failed 3 times): 500 Internal Server Error
+2023-10-19 17:30:23 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://ufsauto.com/a0309197-toyota-probox-2014.html> (failed 3 times): 500 Internal Server Error
+2023-10-19 17:30:23 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://ufsauto.com/a0309174-toyota-wish-2007.html> (failed 3 times): 500 Internal Server Error
+2023-10-19 17:30:25 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://ufsauto.com/a0309207-mazda-cx-5-2014.html> (failed 3 times): 500 Internal Server Error
+2023-10-19 17:30:25 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://ufsauto.com/a0309194-mercedes-enz-c200-2011.html> (failed 3 times): 500 Internal Server Error
+2023-10-19 17:30:25 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://ufsauto.com/a0309192-toyota-ractis-2008.html> (failed 3 times): 500 Internal Server Error
+2023-10-19 17:30:25 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://ufsauto.com/a0309175-nissan-juke-2014.html> (failed 3 times): 500 Internal Server Error
+2023-10-19 17:30:26 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://ufsauto.com/a0309198-toyota-blade-2007.html> (failed 3 times): 500 Internal Server Error
+2023-10-19 17:30:26 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://ufsauto.com/a0309204-toyota-mark-x-2005.html> (failed 3 times): 500 Internal Server Error
+2023-10-19 17:30:26 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://ufsauto.com/a0309208-honda-fit-2014.html> (failed 3 times): 500 Internal Server Error
+2023-10-19 17:30:30 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://ufsauto.com/a0309191-mercedes-enz-c-class-2008.html> (failed 3 times): 500 Internal Server Error
+2023-10-19 17:30:30 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://ufsauto.com/a0309201-toyota-ractis-2006.html> (failed 3 times): 500 Internal Server Error
+2023-10-20 10:40:12 [scrapy.core.engine] ERROR: Error while obtaining start requests
+Traceback (most recent call last):
+  File "C:\office\ufso\venv\lib\site-packages\scrapy\core\engine.py", line 181, in _next_request
+    request = next(self.slot.start_requests)
+  File "C:/office/ufso/ufs_auto/ufs_auto/spiders/details.py", line 28, in start_requests
+    yield scrapy.Request(url, callback=self.parse)
+  File "C:\office\ufso\venv\lib\site-packages\scrapy\http\request\__init__.py", line 93, in __init__
+    self._set_url(url)
+  File "C:\office\ufso\venv\lib\site-packages\scrapy\http\request\__init__.py", line 143, in _set_url
+    raise ValueError(f"Missing scheme in request url: {self._url}")
+ValueError: Missing scheme in request url: Item%20Link
