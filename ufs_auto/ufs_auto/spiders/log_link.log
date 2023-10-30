@@ -182,3 +182,47 @@ Traceback (most recent call last):
   File "C:\office\ufso\venv\lib\site-packages\scrapy\http\request\__init__.py", line 143, in _set_url
     raise ValueError(f"Missing scheme in request url: {self._url}")
 ValueError: Missing scheme in request url: Item%20Link
+2023-10-30 13:58:40 [scrapy.core.engine] ERROR: Error while obtaining start requests
+Traceback (most recent call last):
+  File "C:\office\ufso\venv\lib\site-packages\scrapy\core\engine.py", line 181, in _next_request
+    request = next(self.slot.start_requests)
+  File "C:/office/ufso/ufs_auto/ufs_auto/spiders/links.py", line 24, in start_requests
+    yield scrapy.Request(url, callback=self.parse_page)
+  File "C:\office\ufso\venv\lib\site-packages\scrapy\http\request\__init__.py", line 93, in __init__
+    self._set_url(url)
+  File "C:\office\ufso\venv\lib\site-packages\scrapy\http\request\__init__.py", line 143, in _set_url
+    raise ValueError(f"Missing scheme in request url: {self._url}")
+ValueError: Missing scheme in request url: page_links
+2023-10-30 13:59:21 [scrapy.core.engine] ERROR: Error while obtaining start requests
+Traceback (most recent call last):
+  File "C:\office\ufso\venv\lib\site-packages\scrapy\core\engine.py", line 181, in _next_request
+    request = next(self.slot.start_requests)
+  File "C:/office/ufso/ufs_auto/ufs_auto/spiders/links.py", line 24, in start_requests
+    yield scrapy.Request(url, callback=self.parse_page)
+  File "C:\office\ufso\venv\lib\site-packages\scrapy\http\request\__init__.py", line 93, in __init__
+    self._set_url(url)
+  File "C:\office\ufso\venv\lib\site-packages\scrapy\http\request\__init__.py", line 143, in _set_url
+    raise ValueError(f"Missing scheme in request url: {self._url}")
+ValueError: Missing scheme in request url: page_links
+2023-10-30 14:01:41 [scrapy.core.engine] ERROR: Error while obtaining start requests
+Traceback (most recent call last):
+  File "C:\office\ufso\venv\lib\site-packages\scrapy\core\engine.py", line 181, in _next_request
+    request = next(self.slot.start_requests)
+  File "C:/office/ufso/ufs_auto/ufs_auto/spiders/links.py", line 24, in start_requests
+    yield scrapy.Request(url, callback=self.parse_page)
+  File "C:\office\ufso\venv\lib\site-packages\scrapy\http\request\__init__.py", line 93, in __init__
+    self._set_url(url)
+  File "C:\office\ufso\venv\lib\site-packages\scrapy\http\request\__init__.py", line 143, in _set_url
+    raise ValueError(f"Missing scheme in request url: {self._url}")
+ValueError: Missing scheme in request url: page_links
+2023-10-30 14:02:26 [scrapy.core.engine] ERROR: Error while obtaining start requests
+Traceback (most recent call last):
+  File "C:\office\ufso\venv\lib\site-packages\scrapy\core\engine.py", line 181, in _next_request
+    request = next(self.slot.start_requests)
+  File "C:/office/ufso/ufs_auto/ufs_auto/spiders/links.py", line 25, in start_requests
+    yield scrapy.Request(url, callback=self.parse_page)
+  File "C:\office\ufso\venv\lib\site-packages\scrapy\http\request\__init__.py", line 93, in __init__
+    self._set_url(url)
+  File "C:\office\ufso\venv\lib\site-packages\scrapy\http\request\__init__.py", line 143, in _set_url
+    raise ValueError(f"Missing scheme in request url: {self._url}")
+ValueError: Missing scheme in request url: page_links
