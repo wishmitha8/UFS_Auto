@@ -38,3 +38,70 @@ Traceback (most recent call last):
   File "C:\Program Files\Python38\lib\mimetypes.py", line 262, in read_windows_registry
     continue
 KeyboardInterrupt
+2023-11-01 11:50:53 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://ufsauto.com/make.html?p=16> (failed 3 times): 500 Internal Server Error
+2023-11-01 12:08:21 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://ufsauto.com/make.html?p=16> (failed 3 times): 500 Internal Server Error
+2023-11-01 12:08:21 [ufs_auto] ERROR: Internal Server Error on page: https://ufsauto.com/make.html?p=16
+2023-11-01 12:15:36 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://ufsauto.com/make.html?p=16> (failed 3 times): 500 Internal Server Error
+2023-11-06 10:57:03 [scrapy.core.scraper] ERROR: Spider error processing <GET https://ufsauto.com/make.html?p=1> (referer: None)
+Traceback (most recent call last):
+  File "C:\office\ufso\venv\lib\site-packages\twisted\internet\defer.py", line 892, in _runCallbacks
+    current.result = callback(  # type: ignore[misc]
+  File "C:\office\ufso\venv\lib\site-packages\scrapy\spiders\__init__.py", line 79, in _parse
+    return self.parse(response, **kwargs)
+  File "C:/office/ufso/ufs_auto/ufs_auto/spiders/test_page_link.py", line 33, in parse
+    df = pd.DataFrame({"page_links": self.page_links})
+NameError: name 'pd' is not defined
+2023-11-06 10:57:40 [scrapy.core.scraper] ERROR: Spider error processing <GET https://ufsauto.com/make.html?p=1> (referer: None)
+Traceback (most recent call last):
+  File "C:\office\ufso\venv\lib\site-packages\twisted\internet\defer.py", line 892, in _runCallbacks
+    current.result = callback(  # type: ignore[misc]
+  File "C:\office\ufso\venv\lib\site-packages\scrapy\spiders\__init__.py", line 79, in _parse
+    return self.parse(response, **kwargs)
+  File "C:/office/ufso/ufs_auto/ufs_auto/spiders/test_page_link.py", line 33, in parse
+    df = pd.DataFrame({"page_links": self.page_links})
+NameError: name 'pd' is not defined
+2023-11-06 10:58:32 [scrapy.core.scraper] ERROR: Spider error processing <GET https://ufsauto.com/make.html?p=1> (referer: None)
+Traceback (most recent call last):
+  File "C:\office\ufso\venv\lib\site-packages\twisted\internet\defer.py", line 892, in _runCallbacks
+    current.result = callback(  # type: ignore[misc]
+  File "C:\office\ufso\venv\lib\site-packages\scrapy\spiders\__init__.py", line 79, in _parse
+    return self.parse(response, **kwargs)
+  File "C:/office/ufso/ufs_auto/ufs_auto/spiders/test_page_link.py", line 33, in parse
+    df = pd.DataFrame({"page_links": page_links})
+NameError: name 'pd' is not defined
+2023-11-06 11:01:12 [scrapy.core.scraper] ERROR: Spider error processing <GET https://ufsauto.com/make.html?p=1> (referer: None)
+Traceback (most recent call last):
+  File "C:\office\ufso\venv\lib\site-packages\twisted\internet\defer.py", line 892, in _runCallbacks
+    current.result = callback(  # type: ignore[misc]
+  File "C:\office\ufso\venv\lib\site-packages\scrapy\spiders\__init__.py", line 79, in _parse
+    return self.parse(response, **kwargs)
+  File "C:/office/ufso/ufs_auto/ufs_auto/spiders/test_page_link.py", line 33, in parse
+    df = pd.DataFrame({"page_links": page_links})
+NameError: name 'pd' is not defined
+2023-11-06 11:02:06 [scrapy.core.scraper] ERROR: Spider error processing <GET https://ufsauto.com/make.html?p=1> (referer: None)
+Traceback (most recent call last):
+  File "C:\office\ufso\venv\lib\site-packages\twisted\internet\defer.py", line 892, in _runCallbacks
+    current.result = callback(  # type: ignore[misc]
+  File "C:\office\ufso\venv\lib\site-packages\scrapy\spiders\__init__.py", line 79, in _parse
+    return self.parse(response, **kwargs)
+  File "C:/office/ufso/ufs_auto/ufs_auto/spiders/test_page_link.py", line 34, in parse
+    df = pd.DataFrame({"page_links": page_links})
+NameError: name 'pd' is not defined
+2023-11-06 11:02:47 [scrapy.core.scraper] ERROR: Spider error processing <GET https://ufsauto.com/make.html?p=1> (referer: None)
+Traceback (most recent call last):
+  File "C:\office\ufso\venv\lib\site-packages\twisted\internet\defer.py", line 892, in _runCallbacks
+    current.result = callback(  # type: ignore[misc]
+  File "C:\office\ufso\venv\lib\site-packages\scrapy\spiders\__init__.py", line 79, in _parse
+    return self.parse(response, **kwargs)
+  File "C:/office/ufso/ufs_auto/ufs_auto/spiders/test_page_link.py", line 34, in parse
+    df = pd.DataFrame({"page_links": page_links})
+NameError: name 'pd' is not defined
+2023-11-06 11:03:20 [scrapy.core.scraper] ERROR: Spider error processing <GET https://ufsauto.com/make.html?p=1> (referer: None)
+Traceback (most recent call last):
+  File "C:\office\ufso\venv\lib\site-packages\twisted\internet\defer.py", line 892, in _runCallbacks
+    current.result = callback(  # type: ignore[misc]
+  File "C:\office\ufso\venv\lib\site-packages\scrapy\spiders\__init__.py", line 79, in _parse
+    return self.parse(response, **kwargs)
+  File "C:/office/ufso/ufs_auto/ufs_auto/spiders/test_page_link.py", line 33, in parse
+    df = pd.DataFrame({"page_links": page_links})
+NameError: name 'pd' is not defined

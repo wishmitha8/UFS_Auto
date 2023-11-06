@@ -17,6 +17,7 @@ class DetailsSpider(scrapy.Spider):
 
     def start_requests(self):
         for url in self.links:
+            #print(url)
             yield scrapy.Request(url, callback=self.parse)
 
     def parse(self, response):

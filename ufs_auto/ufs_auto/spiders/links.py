@@ -37,4 +37,5 @@ process.crawl(DetailsSpider)
 process.start()
 
 # Save the global DataFrame to a CSV file
+global_df = global_df.drop_duplicates()
 global_df.to_csv('output/links.csv', index=False)

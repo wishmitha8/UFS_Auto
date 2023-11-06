@@ -1,15 +1,11 @@
 import scrapy
-import pandas as pd
 from scrapy.crawler import CrawlerProcess
+import pandas as pd
 
 class DetailsSpider(scrapy.Spider):
     name = "ufs_auto"
     allowed_domains = ["ufsauto.com"]
-
     start_urls = ['https://ufsauto.com/make.html?p=1']
-
-    # Define an empty list to store page links
-    page_links = []
 
     custom_settings = {
         'LOG_FILE': 'log_page_links.log',
@@ -20,33 +16,28 @@ class DetailsSpider(scrapy.Spider):
     }
 
     def parse(self, response):
-        # Append the current page link to the list
-        self.page_links.append(response.url)
+        # Extract and yield all text within li elements
 
-        # Determine the page number from the URL
-        page_number = response.url.split('=')[-1]
+            li_values = response.xpath('//*[@id="narrow-by-list"]/div[1]/div[2]/ol/li/a/span/text()').getall()
+            count=0
 
-        # Use different XPath based on the page number
-        if page_number == '1':
-            next_page_xpath = '//*[@id="layer-product-list"]/div[3]/div[3]/ul/li[6]/a/@href'
-        else:
-            next_page_xpath = '//*[@id="layer-product-list"]/div[3]/div[3]/ul/li[7]/a/@href'
+            for value in li_values:
+               count=count+ int(value)
+            page_count= round(count/15) +1
 
-        # Extract the next page link using the provided XPath
-        next_page_link = response.xpath(next_page_xpath).extract_first()
+            page_links=[]
+            for i in range (1,(page_count)+1):
+                #'https://ufsauto.com/make.html?p={i}'
+                url = f'https://ufsauto.com/make.html?p={i}'
+                page_links.append(url)
+            # Convert the list of page links to a DataFrame
+            df = pd.DataFrame({"page_links": page_links})
 
-        if next_page_link:
-            yield scrapy.Request(
-                url=next_page_link,
-                callback=self.parse
-            )
-
-    def closed(self, reason):
-        # Convert the list of page links to a DataFrame
-        df = pd.DataFrame({"page_links": self.page_links})
 
         # Save the DataFrame to a CSV file
-        df.to_csv('page_links.csv', index=False)
+            df.to_csv('page_links.csv', index=False)
+
+
 
 process = CrawlerProcess()
 process.crawl(DetailsSpider)
